@@ -13,14 +13,14 @@
 
 /* Begin PBXFileReference section */
 		1E1F07C0547AC741FDE7863D /* Pods-SigmaSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SigmaSwift_Tests.release.xcconfig"; path = "Target Support Files/Pods-SigmaSwift_Tests/Pods-SigmaSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		232AF9CA9656D173C087366F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		232AF9CA9656D173C087366F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2D84E9CFCBB0EEADDF3C3F78 /* Pods-SigmaSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SigmaSwift_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SigmaSwift_Tests/Pods-SigmaSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* SigmaSwift_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SigmaSwift_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		60C7A1DECF564DFFC074E758 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		60C7A1DECF564DFFC074E758 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6A286F7592A8D5215D2BFE35 /* Pods_SigmaSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SigmaSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A49A37C632B0522D02212D17 /* SigmaSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SigmaSwift.podspec; path = ../SigmaSwift.podspec; sourceTree = "<group>"; };
+		A49A37C632B0522D02212D17 /* SigmaSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SigmaSwift.podspec; path = ../SigmaSwift.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +41,6 @@
 				2D84E9CFCBB0EEADDF3C3F78 /* Pods-SigmaSwift_Tests.debug.xcconfig */,
 				1E1F07C0547AC741FDE7863D /* Pods-SigmaSwift_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,14 +130,9 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
-						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
 			};
@@ -147,6 +141,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -346,7 +341,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SigmaSwift_Example.app/SigmaSwift_Example";
 			};
 			name = Debug;
 		};
@@ -364,7 +358,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SigmaSwift_Example.app/SigmaSwift_Example";
 			};
 			name = Release;
 		};
