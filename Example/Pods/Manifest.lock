@@ -1,0 +1,27 @@
+PODS:
+  - Nimble (7.3.4)
+  - Quick (1.2.0)
+  - SigmaSwift (0.1.0)
+
+DEPENDENCIES:
+  - Nimble (~> 7.0)
+  - Quick (~> 1.2.0)
+  - SigmaSwift (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  SigmaSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  SigmaSwift: a0c049f1e8a206d72802b4d35103612b7f8c2d14
+
+PODFILE CHECKSUM: 86b096b41026a3c8f7ee80a5abc02a3a53b5517f
+
+COCOAPODS: 1.7.3

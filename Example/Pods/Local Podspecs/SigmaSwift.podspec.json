@@ -1,0 +1,22 @@
+{
+  "name": "SigmaSwift",
+  "version": "0.1.0",
+  "summary": "A short description of SigmaSwift.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/rishiosaur/SigmaSwift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "rishiosaur": "itsrishikothari@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/rishiosaur/SigmaSwift.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SigmaSwift/Classes/**/*"
+}
