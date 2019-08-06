@@ -7,6 +7,11 @@
 
 import Foundation
 
-func add(left: Variable, right: Variable) -> (Variable, Expression) {
-  
-}
+/**
+ 
+ */
+//func add(left: Variable, right: Variable) -> (Variable) {
+//  if (left.value === right.value) {
+//    return Expression([Constant(value: left.coefficient+right.coefficient)])
+//  }
+//}
