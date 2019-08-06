@@ -22,6 +22,8 @@
 		11E562107FE281404113395BA7DA35D8 /* AssertionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BCB00218D912BF3022918AC5314499 /* AssertionDispatcher.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		11EDFDE1BC5494E14D6F81320FE3925F /* QuickConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = D6D08E0D0BD65B44B72300EF2CFC4AB1 /* QuickConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13AF4CA922F9AC0A00B08A16 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF4CA822F9AC0A00B08A16 /* Expression.swift */; };
+		13AF4CAB22F9B27C00B08A16 /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF4CAA22F9B27C00B08A16 /* Variable.swift */; };
+		13AF4CAE22F9B29700B08A16 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF4CAD22F9B29700B08A16 /* Constant.swift */; };
 		16EFAB6D6AE45841C4A039600E30D242 /* QuickSpecBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D16FC3A8EEF09E241A3ADE69B2AE5F0 /* QuickSpecBase.m */; };
 		1B150812C28ED02DDC40A757EA00EFDB /* NMBExpectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C5BEAAE8914809F8E940AC4BE8F110 /* NMBExpectation.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		2023F999AC73F0B1917FF8C058F20AE2 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF27F0B51CBC887E31B6B4701099383E /* Closures.swift */; };
@@ -162,6 +164,8 @@
 		1284455908D0CE6BDF364C3B292437D9 /* XCTestObservationCenter+Register.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestObservationCenter+Register.m"; path = "Sources/NimbleObjectiveC/XCTestObservationCenter+Register.m"; sourceTree = "<group>"; };
 		13021B9014131A1488541C9023D589EA /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Sources/Nimble/DSL.swift; sourceTree = "<group>"; };
 		13AF4CA822F9AC0A00B08A16 /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		13AF4CAA22F9B27C00B08A16 /* Variable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variable.swift; sourceTree = "<group>"; };
+		13AF4CAD22F9B29700B08A16 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		1A0C195994FD62D0861ADC1E5EC15398 /* Pods-SigmaSwift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SigmaSwift_Tests-dummy.m"; sourceTree = "<group>"; };
 		1C880B7678B41068E063FF16E6D091CB /* HooksPhase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HooksPhase.swift; path = Sources/Quick/Hooks/HooksPhase.swift; sourceTree = "<group>"; };
 		1DE0629303CCD31FD5D583A637EB756F /* BeAnInstanceOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeAnInstanceOf.swift; path = Sources/Nimble/Matchers/BeAnInstanceOf.swift; sourceTree = "<group>"; };
@@ -329,6 +333,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13AF4CAC22F9B28100B08A16 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				13AF4CAA22F9B27C00B08A16 /* Variable.swift */,
+				13AF4CAD22F9B29700B08A16 /* Constant.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
 		1413D3273401D345324C44F926946647 /* Nimble */ = {
 			isa = PBXGroup;
 			children = (
@@ -523,6 +536,7 @@
 				7EEAD56C6E5F0DFE3C93F74666295F63 /* Pod */,
 				CECA18F96C01E20B32C600C47CD84B6E /* Support Files */,
 				13AF4CA822F9AC0A00B08A16 /* Expression.swift */,
+				13AF4CAC22F9B28100B08A16 /* Operations */,
 			);
 			name = SigmaSwift;
 			path = ../..;
@@ -800,12 +814,14 @@
 				ED6FC5CEB11E74E7698F09F380683CFC /* BeGreaterThanOrEqualTo.swift in Sources */,
 				B4374EE986ACDA18DE16359C36F43971 /* BeIdenticalTo.swift in Sources */,
 				864E6B0B8D286D38A202F0381C7D45DD /* BeLessThan.swift in Sources */,
+				13AF4CAB22F9B27C00B08A16 /* Variable.swift in Sources */,
 				A82232B7EA64317A4F0A1F5FC2C9F5D6 /* BeLessThanOrEqual.swift in Sources */,
 				6ADEB55FAF48827EE08D5E1B6F946501 /* BeLogical.swift in Sources */,
 				64ED91354C9DB1A35CFE783624260E0F /* BeNil.swift in Sources */,
 				D8D8636AA4F6781D2A809B0984B434B0 /* BeVoid.swift in Sources */,
 				364F3140C786E01EFCF6656C8A2FF6C2 /* Contain.swift in Sources */,
 				01869817854E030910D5C2F7FB4D64BB /* ContainElementSatisfying.swift in Sources */,
+				13AF4CAE22F9B29700B08A16 /* Constant.swift in Sources */,
 				67A144189500D0F068317EA82B7A3478 /* CwlBadInstructionException.swift in Sources */,
 				41E31C552EE259E4BEC6CFE49299B5C2 /* CwlCatchBadInstruction.swift in Sources */,
 				A2DB6695330623A662CEDEA0EC8598C4 /* CwlCatchException.m in Sources */,

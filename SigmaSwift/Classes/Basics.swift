@@ -11,15 +11,6 @@ enum Operation : String {
   case divide = "/"
 }
 
-///**
-// The `Coefficient` is a stripped-away `Variable` or `Constant`, with a single value, although this is prone to changes.
-//
-// For now, the `Coefficient` will only be able to hold a string value, as part of a variable. If a more complex term is required, like 2xy, then one could just multiply another variable `y` by `2x` to acheive the same result.
-// */
-//struct Coefficient {
-//  var value: Int
-//}
-
 /**
  # Variables and Constants
  These are the underpinnings of math, but in `Sigma`, they are rather simple (as of 5/8/19).
@@ -27,8 +18,13 @@ enum Operation : String {
  In a Variable
  */
 
+/**
+ The `Term` protocol is used to unite the `Variable` and `Constant` `structs`, for use in an array.
+ 
+ This protocol can also be used externally, to define more complex behaviour.
+ */
 protocol Term {
-  
+  var operation : Operation? { get }
 }
 
 /// A `Variable` is part of a Term, and consists of an `operation`; and a `value`, which may change at any time.
