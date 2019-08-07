@@ -7,7 +7,6 @@
 
 import Foundation
 
-let a = Variable(coefficient: <#T##Int#>, operation: <#T##Operation#>, value: <#T##String#>)
 /**
  
  */

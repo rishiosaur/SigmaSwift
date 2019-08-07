@@ -1,7 +1,7 @@
-
+///# Structs
 
 /**
- # Variables and Constants
+ ## Variables and Constants
  These are the underpinnings of math, but in `Sigma`, they are rather simple (as of 5/8/19).
  For now, they consist of an operation, and a value.
  In a Variable
@@ -53,7 +53,7 @@ public enum Operation : String {
 }
 
 /**
- # Characters
+ ## Characters
  Algebra and calculus don't just use letters as variable names, they can also use letters from other languages.
  */
 
@@ -86,3 +86,18 @@ public enum GreekLetter {
   case psi
   case omega
 }
+
+/**
+ ## Expressions
+ */
+struct Expression {
+  var terms : [Term]
+  var degree : Int
+  var string : String
+  var tex : String
+  
+  
+}
+
+
+///# Operators
