@@ -17,9 +17,9 @@ public protocol Term {
 }
 
 /**
- A `Variable` is part of a Term, and whose value may change at any time, or can be
+ A `Variable` is part of a Term, and whose value may change at any time, or can be assigned a value.
 */
-public class Variable : Term {
+public struct Variable : Term {
   var coefficient : Int
   public var operation : Operation
   var value : String
